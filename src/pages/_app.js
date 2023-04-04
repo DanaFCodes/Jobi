@@ -1,8 +1,13 @@
-// import "./next/app";
-// import App from "./_app.js";
+// importing css
 import "@/styles/global.css";
+import "@/styles/homePage.css";
 
+import Layout from "./layout";
 export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+    return (
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    );
 }
 

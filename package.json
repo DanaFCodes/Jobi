@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.13",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "firebase": "^8.2.1",
+    "firebase-admin": "^11.5.0",
     "next": "13.2.4",
-    "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
   }
 }

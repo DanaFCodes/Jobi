@@ -1,0 +1,1269 @@
+/* ---- meddia queries ---- */
+/* large screen */
+ @media (max-width: 1400px) {
+    /* header */
+    div.header h1 {
+        font-size: 60px;
+        padding-top: 20px;
+    }
+    div.header p {
+        font-size: 16px;
+    }
+    .headerImg {
+        transform: scale(.8);
+        margin-left: -70px;
+    }
+    /* trending solutions */
+    .trendy h2 {
+        font-size: 70px;
+    }
+    div.trendingContainer {
+        grid-auto-columns: 37%;
+    }
+    /* businessSolutions section */
+    div.businessLeft {
+        width: 40%;
+    }
+    .businessLeft h3 {
+        margin-top: 100px;
+        font-size: 50px;
+    }
+    .businessLeft p {
+        font-size: 16px;
+    }
+    .businessLeft p.solutionsInfo {
+        font-size: 16px;
+    }
+    .businessStats,
+    .businessWords {
+        margin-left: -30px;
+        transform: scale(.9);
+    }
+    .businessStats {
+        width: 107%;
+    }
+    p.solutions {
+        margin-bottom: -115px;
+    }
+    /* why choose us section */
+    .whyChooseUs {
+        transform: scale(.9);
+    }
+    div.gettingStartedBottom {
+        display: block;
+        height: 100%;
+    }
+    .gettingStartedOne, 
+    .gettingStartedTwo,
+    .gettingStartedThree {
+        margin-top: 50px;
+    }
+    div.gettingStartedRight {
+        display: none;
+    }
+    h3.bottomH {
+        display: block;
+        color: white;
+        margin-top: 50px;
+        font-size: 50px;
+    }
+    h3.bottomH span {
+        color: green;
+    }
+    /* what clients have to say section */
+    div.greenClientCirc {
+        height: 35px;
+        width: 35px;
+    }
+    div.greenClientCirc p {
+        margin-top: -9px;
+    }
+    /* collaboration section */
+    div.collaborationLeft p {
+        width: 60%;
+        font-size: 14px;
+    }
+    div.collaborationLeft h3 {
+        font-size: 55px;
+    }
+    /* trending skills section */
+    div.trendingSkills {
+        transform: scale(.9);
+    }   
+}
+/* desktop */
+@media (max-width: 1000px) {
+    div .findNav {
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    div .navLogo {
+        transform: scale(.8);
+    }
+    div .navContainer .findNav p {
+        font-size: 10px;
+    }
+    div .navLogin {
+        width: 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* header section */
+    .header {
+        margin: -100px 0;
+        text-align: center;
+    }
+    .headerImg {
+        transform: scale(1.2);
+        margin: 40px -70px;
+    }
+    .headerFlexContainer {
+        flex-direction: column-reverse;
+    }
+    header .header h4 {
+        margin-bottom: -20px;
+    }
+    button.button {
+        margin-bottom: 50px;
+    }
+    .trustedLogos {
+        justify-content: center;
+        width: 100%;
+    }
+    .navContainer .findNav p {
+        font-size: 12px;
+    }
+    .navLogin {
+        transform: scale(.8);
+    }
+    div .navLogin .navButt1 {
+    margin-left: 0px;
+    }
+    .secondaryNav li {
+        display: none;
+    }
+    header .header h1 {
+        font-size: 60px;
+    }
+    /* trending services section */
+    .trendy h2 {
+        font-size: 40px;
+    }
+    /* marketplace section */
+    .marketplaceTitle h3.explore {
+        font-size: 30px;
+    }
+    .marketplaceTitle p.exploreP {
+        font-size: 12px;
+    }
+    .uxUi li, 
+    .dev li, 
+    .marketing li, 
+    .phone li, 
+    .editing li,
+    .accounting li {
+        transform: scale(.7);
+    }
+    /* why choose us section */
+    div.whyChooseUs{
+        margin: -50px 0px;
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+    }
+    div.whyRight {
+        width: 100%;
+    }
+    div.whyChooseUs h2 {
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    p.whyThough {
+        text-align: center;
+    }
+    .whyLeft {
+        margin-top: -50px;
+        margin-bottom: 150px;
+    }
+    /* business solutions section */
+    .businessSolutions {
+        text-align: center;
+    }
+    div.businessImg {
+        display: none;
+    }
+    .businessLeft h3 {
+        margin-top: 150px;
+    }
+    div.businessLeft {
+        width: 100%;
+    }
+    .businessStats {
+        text-align: center;
+    }   
+    /* business solutions section */
+    div.businessStats p {
+        text-align: center;
+    }
+    /* what clients have to say section */
+    div.greenClientCirc p {
+        margin-top: 0px;
+    }
+    div.clientInfo p {
+        font-size: 18px;
+    }
+    p.rashed {
+        font-size: 14px;
+    }
+    div.clients {
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    /* collaboration section */
+    div.collaborationRight {
+        transform: scale(.6);
+        position: absolute;
+        right: 20px;
+        top: 100px;
+    }
+    div.collaborationLeft h3 {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    /* trending skills section */
+    div.trends p,
+    div.trends h4 {
+        font-size: 12px;
+    }
+    /* footer section */
+    div .foot h4, 
+    div .foot p {
+        font-size: 12px;
+    }
+    div .newsletter {
+        width: 100%;
+    }
+    div .foot {
+        margin-right: 0px; 
+    }
+    div .footerForReal p {
+        font-size: 8px;
+    }
+    div .footerIcons {
+        transform: scale(.5);
+    }
+    div .copyright {
+        margin-left: 15px;
+    }
+}
+/* tablet */
+@media (max-width: 750px) {
+    /* nav section */
+    div .findNav {
+        justify-content: space-evenly;
+    }
+    .explore:hover {
+        text-decoration: underline;
+    }
+    /* header */
+    .headerImg {
+        display: none;
+    }
+    /* trending services section */
+    .trendy {
+        flex-direction: column;
+    }
+    .trendyButts {
+        margin: -20px 0px 20px 0px;
+    }
+    /* marketplace section */
+    .marketListContainer {
+        flex-direction: column;
+    }
+    div.marketList {
+        height: 190px;
+        width: 100%;
+        margin-bottom: 10px;
+    }    
+    /* what clients have to say section */
+    div.greenClientCirc p {
+        margin-top: 2px;
+    }
+    div.clientInfo p {
+        font-size: 14px;
+    }
+    p.rashed {
+        font-size: 14px;
+    }
+    .whatClientsHaveToSay h3 {
+        font-size: 50px;
+    }
+    div.clients .client {
+        transform: scale(.6);
+        width: 15%;
+        height: auto;
+    }
+    div.clients .client.client5 {
+        display: none;
+    }
+    /* collaboration section */
+    div.collaborationRight {
+        display: none;
+    }
+    div.collaborationLeft {
+        text-align: center;
+        margin: 0 auto;
+    }
+    div.collaborationLeft p {
+        width: 100%;
+    }
+     /* trending skills section */
+    div.trends {
+        width: 45%;
+    }
+    .trendingSkills {
+        flex-wrap: wrap;
+    }
+    div.foot p {
+        font-size: 12px;
+    }
+    div .footingHeaderLeft h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    div .footerButt1,
+    div .footerButt2,
+    div .footingHeaderLeft p  {
+        font-size: 10px;
+    }
+}
+/* mobile */
+@media (max-width: 480px) {
+    /* nav section */
+    div .findNav {
+        width: 70%;
+    }
+    div .navLogin {
+        display: none;
+    }
+    /* header section */
+    .trustedLogos {
+        transform: scale(.8);
+    }
+    /* trending services section */
+    .trendy h2 {
+        text-align: center;
+    }
+    /* marketplace section */
+    div.marketplaceTitle p {
+        width: 50%;
+    }
+    /* why choose us section */
+    div.whyLeft {
+        transform: scale(.7);
+        margin-top: -150px;
+        margin-bottom: 50px;
+    }
+    .whyChooseUs button {
+        margin-left: 90px;
+    }   
+    /* business solutions section */
+    .businessSolutions {
+        display: flex;
+        align-items: center;
+    }
+    .businessLeft {
+        padding: 40px 60px;
+    }
+    p.whyThough.solutions{
+        margin-bottom: -120px;
+        margin-top: 70px;
+    }
+    div.businessStats {
+        margin: 0 auto;
+    }
+    div.businessStats p,
+    div.businessWords p {
+        display: none;
+    }
+    /* getting started section */
+    h3.bottomH {
+        font-size: 40px;
+    }
+}
+
+/* nav */
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 0 0px;
+    border-bottom: 5px;
+}
+.explore {
+    position: relative;
+}
+.header {
+    margin-bottom: 95px;
+}
+.hLine { 
+    width:100%; 
+    height:1px; 
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.navTags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navContainer p {
+    font-size: 18px;
+}
+.findNav {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    align-items: center;
+}
+.navTags p {
+    font-size: 14px;
+    padding-right: 20px
+}
+.navLogin {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+button.navButt1 {
+    color: green;
+    margin-left: -50px;
+    background-color: transparent;
+    border: none;
+}
+button.navButt2  {
+    background-color: green;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    width: 130px;
+    height: 50px;
+}
+button.bottomArrow {
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    margin-left: -35px;
+}
+.navPages li {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    text-decoration: none;
+}
+.navPages a {
+    text-decoration: none;
+    display: none;
+}
+.headerFlexContainer {
+    display: flex;
+    align-items: center;
+}
+.secondaryNav li {
+    list-style-type: none;
+    font-size: 11px;
+}
+.secondaryNav li:hover {
+    text-decoration: underline;
+}
+.secondaryNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -40px;
+}
+.anchorsUp {
+    background-color: transparent;
+    border: none;
+}
+
+/* header */
+.header h4 {
+    font-weight: 400;
+    margin: 135px 0px -55px 0px;
+}
+.header h1 {
+    font-size: 80px;
+}
+.header p {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+.button {
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 20px;
+    border: none;
+    width: 200px;
+    height: 50px;
+}
+.trustedLogos {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.trustedLogosDiv {
+    display: flex;
+    justify-content: space-evenly;
+    width: 335px;
+}
+
+/* trending section */
+.trendingContainer {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 32%;
+    margin-bottom: 100px;
+    overflow-y: hidden;
+    overflow-x:hidden;
+}
+.trendingImage {
+    position: relative;
+    z-index: 0;
+    filter: brightness(50%);
+}
+.carousel p {
+    color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    margin: 150px 25px;
+}
+.scroll-arrow {
+    margin-top: 20px;  
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+.trendy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trendy h2 {
+    font-size: 60px;
+}
+.trendyButts {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* marketplace section */
+.marketplaceTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.marketplace h3 {
+    font-size: 55px;
+}
+.marketplace p {
+    color: green;
+    padding-bottom: 5px;
+    border-bottom: 1px green solid;
+    /* text-decoration: underline; */
+}
+.marketListContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.marketList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgba(128, 128, 128, 0.463) solid;
+    border-radius: 50px;
+    height: 250px;
+    width: calc(90%/6);
+    text-align: center;
+}
+.marketList li {
+    list-style-type: none;
+    min-width: 100%;
+    font-size: 16px;
+}
+.marketList span {
+    color: grey;
+}
+.uxUi li, 
+.dev li, 
+.marketing li, 
+.phone li, 
+.editing li,
+.accounting li {
+    margin: 45px 0 45px -36px;
+}
+
+/* why choose us section */
+.whyChooseUs {
+    margin: 100px 0px;
+    display: flex;
+    justify-content: space-between ;
+}
+.whyLeft {
+    position: relative;
+}
+.whySearch {
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    position: absolute;
+    top: 170px;
+    left: 35px;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.242);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.whySearch p {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 0 10px;
+}
+p.x {
+    font-size: 20px;
+}
+.x {
+    transform: rotate(135deg);
+}
+.magnify {
+    transform: scale(.7);
+    position: absolute;
+    left: 375px;
+}
+.usersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 35px;
+    top: 250px;
+}
+.user {
+    height: 70px;
+    width: 425px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.051);
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.antonio {
+    border-radius: 50px;
+    margin-top: -5px;
+}
+.user p {
+    font-size: 12px;
+}
+.userInfo {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    width: 400px;
+}
+.topUl {
+    margin: -15px 0px -20px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.bottomUl {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: grey;
+}
+.bottomUl p {
+    font-size: 10px;
+    padding-top: 8px;
+}
+.bottomUl span {
+    color: black;
+}
+p.hireMe {
+    border: 1px green solid;
+    color: green;
+    font-size: 8px;
+    padding: 5px;
+}
+.seamlessSearch,
+.hireTopTalents,
+.protectedPayments {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.whyRight p {
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px rgba(0, 0, 0, 0.225) solid;
+    margin-bottom: -5px;
+}
+.whyRight {
+   width: 55%;
+}
+.hireTopTalents,
+.protectedPayments {
+    border-bottom: 1px rgba(0, 0, 0, 0.225) solid;
+}
+.whyChooseUs button {
+    margin-top: 20px;
+}
+.whyRight h2 {
+    font-size: 60px;
+    width: 80%;
+    line-height: 1;
+    margin-top: 10px
+}
+p.whyThough {
+    border-bottom: 1px transparent solid;
+    color: green;
+    margin-top: 100px;
+    margin-bottom: -20px;
+}
+.seamlessSearch {
+    margin: -30px 0 -20px 0;
+}
+
+/* business solution section */
+.businessSolutions {
+    background-color: rgb(78, 44, 44);
+    padding: 20px 40px;
+    height: 750px;
+    position: relative;
+}
+.businessLeft {
+    width: 55%;
+    margin-top: -50px;
+}
+.businessImg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+p.solutions {
+    margin-bottom: -65px;
+}
+.businessLeft h3 {
+    color: white;
+    line-height: 1.1;
+}
+.businessSpan {
+    color:rgb(183, 124, 124)
+}
+p.solutionsInfo {
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+    margin-top: -40px;
+}
+.businessStats {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-top: 1px rgba(255, 255, 255, 0.468) solid;
+}
+.businessStats p {
+    font-size: 30px;
+    font-weight: 600;
+}
+p.threePercent {
+    margin-right: -20px;
+}
+p.mil {
+    margin-right: 110px;
+}
+.businessWords {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: -35px;
+    margin-bottom: 50px;
+}
+.businessWords p {
+    font-size: 16px;
+}
+
+/* getting started section */
+.gettingStarted {
+  margin-top: 100px;
+  width: 1192px;
+  height: 750px;
+  overflow: hidden;
+}
+.howItWorksImg {
+    width: 1192px;;
+}
+.gettingStartedSection {
+    display: flex;
+    position: relative;
+    width: 1172px;
+}
+.gettingStartedRight {
+    width: 63%;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.775) 0%, rgba(0, 0, 0, 0) 95%);
+    position: absolute;
+    left: 455px;
+    height: 99.5%;
+    padding-right: 60px;
+}
+.greenC {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(33, 159, 33);
+    position: absolute;
+    z-index: 30;
+    left: 210px;
+    top: 120px;
+}
+.greenCirc {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(33, 159, 33);
+    position: relative;
+    z-index: 30;
+    padding-bottom: 15px;
+    float: left;
+    margin: 10px;
+}
+.greenCirc p {
+    position: absolute;
+    left: 15px;
+    bottom: -8px;
+}
+.playBtn {
+    left: 233px;
+    top: 135px;
+    position: absolute;
+    z-index: 40;
+}
+.gettingStartedRight h3 {
+    color: white;
+    margin-top: 200px;
+    font-size: 55px;
+    margin-left: 210px;
+}
+.gettingStartedRight span {
+    color: rgb(43, 189, 43);
+}
+.gettingStartedRight p {
+    color: white;
+    margin-left: 210px;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    margin-top: -20px;
+}
+.gettingStartedBottom {
+    display: flex;
+    position: absolute;
+    color: white;
+    height: 200px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.474);
+    padding: 50px;
+    bottom: 4px;
+    width: 100%;
+}
+.gettingStartedOne, 
+.gettingStartedTwo, 
+.gettingStartedThree {
+    width: 40%;     
+}
+.gettingStartedBottom p {
+    font-size: 18px;
+}
+p.gettingStartedAnchor {
+    color: green;
+    font-size: 12px;
+    margin-left: 60px;
+}
+.bottomH {
+    display: none;
+}
+
+/* clients sections */
+.whatClientsHaveToSay {
+    margin-top: 120px;
+}
+.whatClientsHaveToSay h3 {
+    text-align: center;
+}
+.quotes {
+    margin-left: 45%;
+}
+.clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.client {
+    border-radius: 50%;
+    transform: scale(.8);
+    margin: 0 10px;
+}
+.clientInfo {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clientInfo p {
+    line-height: 2;
+    font-size: 25px;
+}
+.greenClientCirc {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: rgb(33, 159, 33);
+    position: relative;
+    z-index: 10;
+    padding-bottom: 15px;
+    float: left;
+}
+.greenClientCirc p {
+    margin-top: -5px;
+    color: white;
+}
+.clientsLeft {
+    position: absolute;
+    left: 115px;
+    transform: rotate(90deg);
+    filter: grayscale(100%) invert(1);
+    z-index: 20;
+}
+.clientsRight {
+    transform: rotate(270deg);
+    filter: grayscale(100%) invert(1);
+    position: absolute;
+    left: 1185px;
+    z-index: 20;
+}
+.rashed {
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.rashed span {
+    color: grey;
+    font-weight: 100;
+}
+
+/* collaboration section */
+.collaboration {
+    background-color: var(--darkGreen);
+    margin-top: 200px;
+    height: 550px;
+    position: relative;
+    display: flex;
+    padding: 50px;
+}
+.collaboration h3 {
+    color: white;
+    font-size: 65px;
+    font-weight: 200;
+}
+.collaboration p {
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    line-height: 2;
+    margin: -40px 0 40px 0;
+}
+.collaborationLeft {
+    margin-top: -40px;
+}
+.ring1 {
+    height: 400px;
+    width: 400px;
+    border:  1px solid rgba(255, 255, 255, 0.561);
+    position: absolute;
+    border-radius: 50%;
+    top: 70px;
+    right: 80px;
+}
+.ring2 {
+    height: 300px;
+    width: 300px;
+    border:  1px solid white;
+    position: absolute;
+    border-radius: 50%;
+    top: 115px;
+    right: 130px;
+}
+.innerCirc {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+    right: 180px;
+    top: 160px;
+    position: absolute;
+}
+.collabLogo {
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    transform: scale(1.3);
+}
+.collabC {
+    height: 90px;
+    width: 90px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+.windowsLogo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.collabC2 {
+    position: absolute;
+    left: 220px;
+    top: -30px;
+    height: 70px;
+    width: 70px;
+}
+.gmailLogo {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.collabC3 {
+    position: absolute;
+    left: 350px;
+    top: 80px;
+    height: 85px;
+    width: 85px;
+}
+.instaLogo {
+    position: absolute;
+    left: 23px;
+    top: 22px;
+}
+.collabC4 {
+    position: absolute;
+    left: 100px;
+    top: 350px;
+}   
+.slackLogo {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+.colabInfo {
+    position: absolute;
+    left: 290px;
+    top: 275px;
+    color: white;
+    background-color: var(--darkGreen);
+    padding: 40px;
+}   
+.colabInfo p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+.colabInfo span {
+    color: rgb(94, 234, 94);
+    font-size: 40px;
+}
+.collabC5 {
+    position: absolute;
+    left: -30px;
+    top: 220px;
+    height: 80px;
+    width: 80px;
+} 
+.messengerLogo {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+/* trending skills section */
+.trendingSkills {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.trends {
+    display: flex;
+    flex-direction: column;
+}
+.trendingSkills h4 {
+    color: black;
+    margin-top: 150px;
+}
+.trendingSkills h4:hover {
+    color: green;
+}
+.trendingSkills p {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+}
+
+/* foooooooooooooooooooooter */
+.footingHeader {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.142);
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+.footingHeaderLeft {
+    display: flex;
+    flex-direction: column;
+}
+.footingHeaderLeft h3 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-bottom: -10px;
+    font-weight: 400;
+}
+.footingHeaderLeft p {
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+.footingHeaderRight {
+    display: flex;
+    align-items: center;
+    margin: 40px 0px 0px 0px;
+    justify-content: flex-end;
+}
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    cursor: default;
+    flex-wrap: wrap;
+}
+.footerBottom p {
+    font-size: 14px;
+    padding-right: 40px;
+    font-weight: 300;
+}
+.footerBottom p:hover{
+    text-decoration: underline;
+}
+.footerForReal {
+    display: flex;
+    justify-content: space-between;
+}
+.footerForReal p {
+    font-size: 12px;
+}
+.privacyAndTerms {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.copyright {
+    text-align: center;
+    margin-left: -70px;
+}
+.footerIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+.footerIcons div:hover{
+    background-color: rgba(128, 128, 128, 0.225);
+}
+.foot {
+    margin-right: -80px;
+}
+.newsletter {
+    margin-right: -20px;
+}
+p.relevant {
+    color: grey;
+    margin-top: 50px;
+}
+p.relevant:hover{
+    text-decoration: none;
+}
+.enterEmail {
+    background-color: white;
+    height: 50px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: -45px;
+    z-index: 10;
+}
+.enterEmail p {
+    margin-top: 6px;
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+}
+.enterEmail p:hover{
+    text-decoration: none;
+}
+.newsletter button { 
+    background-color: rgb(71, 70, 70);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform:capitalize;
+    border-radius: 8px;
+    margin-left: 215px;
+    z-index: 20;
+    position: absolute;
+}
+.newsletter button:hover{
+    background-color: green;
+}
+.jobiFooter {
+    margin-top: 20px;
+}
+.footerButt1 {
+    border: 2px solid green;
+    padding: 15px 25px;
+    color: green;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+}
+.footerButt2 {
+    background-color: green;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 20px;
+}

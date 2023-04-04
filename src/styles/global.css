@@ -1,4 +1,109 @@
-/* WILL APPLY TO ALL PAGES/WHOLE APP... G L O B A L */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* variables */
+:root {
+    --darkGreen: #22543e;
+    --black: #0f1620;
+    --green: #31795a;
+    --buttonGreen: #33b840;
+    --grey: #c4c4c4;
+    --lightGreen: #e9f2ef;
+    --lightGrey: #f5f5f5;
+    --limeGreen: #d2f34c;
+    --garamond: 'EB Garamond', serif;
+    --gordita:  'Gordita', sans-serif; 
+
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 90px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    font-family: var(--garamond);
+    color: var(--darkGreen);
+}
+
+h2 {
+    font-size: 85px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    font-family: var(--garamond);
+    color: var(--darkGreen);
+}
+
+h3 {
+    font-size: 72px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    font-family: var(--garamond);
+    color: var(--darkGreen);
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    font-family: var(--gordita);
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    font-family: var(--gordita);
+    color: var(--green);
+}
+
+h5 {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    font-family: var(--gordita);
+}
+
+li {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+    font-family: var(--gordita);
+}
+
+.button {
+    background-color: var(--buttonGreen);
+}
+
+.button:hover{
+    background-color: green;
+}
+
+.whyCircle {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: var(--lightGreen);
+    margin-top: 150px;
+}
+
+.whySquare {
+    background-color: var(--buttonGreen);
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 370px;
+    border-radius: 10px;
+}
+
+.colabInfo span {
+    font-family: var(--garamond);
+}
+
+.footer {
+    background-color: var(--lightGreen);
+    margin-top: 150px;
+}
 
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
 
@@ -8,7 +113,10 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-body {
-    background-color: red;
+.wrapper {
+    margin: 0 auto;
+    max-width: 85%;
 }
+
+
 

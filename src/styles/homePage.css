@@ -71,13 +71,13 @@
         color: green;
     }
     /* what clients have to say section */
-    div.greenClientCirc {
-        height: 35px;
-        width: 35px;
+    /* div.greenClientCirc {
+        height: 30px;
+        width: 30px;
     }
     div.greenClientCirc p {
         margin-top: -9px;
-    }
+    } */
     /* collaboration section */
     div.collaborationLeft p {
         width: 60%;
@@ -100,7 +100,7 @@
     div .navLogo {
         transform: scale(.8);
     }
-    div .navContainer .findNav p {
+    div .navContainer .findNav a {
         font-size: 10px;
     }
     div .navLogin {
@@ -203,17 +203,10 @@
     .businessStats {
         text-align: center;
     }   
-    /* business solutions section */
     div.businessStats p {
         text-align: center;
     }
     /* what clients have to say section */
-    div.greenClientCirc p {
-        margin-top: 0px;
-    }
-    div.clientInfo p {
-        font-size: 18px;
-    }
     p.rashed {
         font-size: 14px;
     }
@@ -221,6 +214,19 @@
         flex-wrap: wrap;
         margin: 0 auto;
     }
+    li.slide  {
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    button.slide-arrow {
+        width: 35px;
+        height: 35px;
+    }
+    p.buttP {
+        margin-top: 2px;
+        margin-left: 5px;
+    }
+    
     /* collaboration section */
     div.collaborationRight {
         transform: scale(.6);
@@ -392,6 +398,17 @@
     h3.bottomH {
         font-size: 40px;
     }
+    /* clients section */
+        li.slide  {
+        font-size: 14px;
+    }
+    div.clients {
+        opacity: 0;
+    }
+    /* collaboration section */
+    section.collaboration {
+        margin-top: 0px;
+    }
 }
 
 /* nav */
@@ -401,9 +418,6 @@
     align-items: center;
     padding: 30px 0px 0 0px;
     border-bottom: 5px;
-}
-.explore {
-    position: relative;
 }
 .header {
     margin-bottom: 95px;
@@ -419,8 +433,9 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.navContainer p {
+.navContainer a {
     font-size: 18px;
+    text-decoration: none;
 }
 .findNav {
     display: flex;
@@ -484,10 +499,6 @@ button.bottomArrow {
     align-items: center;
     margin-left: -40px;
 }
-.anchorsUp {
-    background-color: transparent;
-    border: none;
-}
 
 /* header */
 .header h4 {
@@ -521,49 +532,54 @@ button.bottomArrow {
     width: 335px;
 }
 
-/* trending section */
-.trendingContainer {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 32%;
+/* trending services section */
+ul.trendingContainer {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 100px;
     overflow-y: hidden;
-    overflow-x:hidden;
+    scroll-behavior: smooth;
+    scrollbar-color: green white;
+    scrollbar-width: 55px;
 }
 .trendingImage {
-    position: relative;
-    z-index: 0;
     filter: brightness(50%);
 }
-.carousel p {
-    color: white;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    margin: 150px 25px;
-}
-.scroll-arrow {
-    margin-top: 20px;  
-    background-color: green;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    height: 30px;
-    width: 30px;
-}
-.trendy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.trendingImage:hover {
+    filter: brightness(100%);
 }
 .trendy h2 {
     font-size: 60px;
+    position: relative;
 }
-.trendyButts {
-    width: 100px;
-    display: flex;
+li.carousel {
+    list-style-type: none;
+    padding: 0 20px;
+}
+.trendy {
+    display: flex; 
     justify-content: space-between;
+    align-items: center; 
 }
+div.trendy .trendArrow{
+  z-index: 10;
+  height: 45px;
+  width: 45px; 
+  border-radius: 50%;
+  background-color: rgb(33, 159, 33);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: .7;
+  transition: opacity 100ms;
+  margin-left: 20px;
+}
+.trendArrow:hover,
+.trendArrow:focus {
+  opacity: 1;
+}
+
 
 /* marketplace section */
 .marketplaceTitle {
@@ -578,7 +594,10 @@ button.bottomArrow {
     color: green;
     padding-bottom: 5px;
     border-bottom: 1px green solid;
-    /* text-decoration: underline; */
+}
+.marketplace p:hover {
+    color: darkgreen;
+    cursor: pointer;
 }
 .marketListContainer {
     display: flex;
@@ -593,6 +612,9 @@ button.bottomArrow {
     height: 250px;
     width: calc(90%/6);
     text-align: center;
+}
+.marketList:hover {
+    border: 2px green solid;
 }
 .marketList li {
     list-style-type: none;
@@ -612,6 +634,45 @@ button.bottomArrow {
 }
 
 /* why choose us section */
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  background-color: white;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  display: none;
+}
+.whyChooseUs p {
+    font-size: 16px;
+}
 .whyChooseUs {
     margin: 100px 0px;
     display: flex;
@@ -619,6 +680,12 @@ button.bottomArrow {
 }
 .whyLeft {
     position: relative;
+}
+.whyRight {
+    padding: 20px;
+}
+p.whyThough {
+    color: green;
 }
 .whySearch {
     height: 50px;
@@ -705,44 +772,6 @@ p.hireMe {
     font-size: 8px;
     padding: 5px;
 }
-.seamlessSearch,
-.hireTopTalents,
-.protectedPayments {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.whyRight p {
-    font-size: 16px;
-    padding-bottom: 20px;
-    border-bottom: 1px rgba(0, 0, 0, 0.225) solid;
-    margin-bottom: -5px;
-}
-.whyRight {
-   width: 55%;
-}
-.hireTopTalents,
-.protectedPayments {
-    border-bottom: 1px rgba(0, 0, 0, 0.225) solid;
-}
-.whyChooseUs button {
-    margin-top: 20px;
-}
-.whyRight h2 {
-    font-size: 60px;
-    width: 80%;
-    line-height: 1;
-    margin-top: 10px
-}
-p.whyThough {
-    border-bottom: 1px transparent solid;
-    color: green;
-    margin-top: 100px;
-    margin-bottom: -20px;
-}
-.seamlessSearch {
-    margin: -30px 0 -20px 0;
-}
 
 /* business solution section */
 .businessSolutions {
@@ -753,7 +782,7 @@ p.whyThough {
 }
 .businessLeft {
     width: 55%;
-    margin-top: -50px;
+    /* margin-top: -50px; */
 }
 .businessImg {
     position: absolute;
@@ -762,6 +791,7 @@ p.whyThough {
 }
 p.solutions {
     margin-bottom: -65px;
+    color: green;
 }
 .businessLeft h3 {
     color: white;
@@ -913,56 +943,69 @@ p.gettingStartedAnchor {
 .whatClientsHaveToSay h3 {
     text-align: center;
 }
-.quotes {
+/* carousel */
+img.quotes {
     margin-left: 45%;
 }
-.clients {
+.slider-wrapper {
+  margin: 1rem;
+  position: relative;
+}
+.slides-container {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+  text-align: center;
+}
+.slide-arrow {
+  z-index: 10;
+  height: 45px;
+  width: 45px; 
+  border-radius: 50%;
+  background-color: rgb(33, 159, 33);
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: .7;
+  transition: opacity 100ms;
+}
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+#slide-arrow-prev {
+  left: 0;
+}
+#slide-arrow-next {
+  right: 0;
+}
+.buttP {
+    margin-top: 6px;
+    margin-left: 10px;
+}
+div.clients {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: -100px;
 }
 .client {
     border-radius: 50%;
     transform: scale(.8);
-    margin: 0 10px;
-}
-.clientInfo {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.clientInfo p {
-    line-height: 2;
-    font-size: 25px;
-}
-.greenClientCirc {
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    background-color: rgb(33, 159, 33);
-    position: relative;
-    z-index: 10;
-    padding-bottom: 15px;
-    float: left;
-}
-.greenClientCirc p {
-    margin-top: -5px;
-    color: white;
-}
-.clientsLeft {
-    position: absolute;
-    left: 115px;
-    transform: rotate(90deg);
-    filter: grayscale(100%) invert(1);
-    z-index: 20;
-}
-.clientsRight {
-    transform: rotate(270deg);
-    filter: grayscale(100%) invert(1);
-    position: absolute;
-    left: 1185px;
-    z-index: 20;
 }
 .rashed {
     position: relative;
@@ -1266,4 +1309,10 @@ p.relevant:hover{
     border-radius: 5px;
     font-size: 16px;
     margin-left: 20px;
+}
+
+
+
+.planDiv {
+    margin: 0 10%;
 }

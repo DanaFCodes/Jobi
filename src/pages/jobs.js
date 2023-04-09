@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { firestore } from "../../utils/firebase"
 
 export default function Job() {
-  // where do i set jobs ?? and w what...?
   const [jobs, setJobs] = useState([]);
   
   const getJobs = async () => {
@@ -29,6 +28,7 @@ export default function Job() {
     <>
       <main>
         <div>
+          <h2 className="planDiv">styling coming soon🥲🪄</h2>
           {jobs.map((job) => {
             return (
               <div key={job.id}>

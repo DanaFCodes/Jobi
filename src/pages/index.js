@@ -1,15 +1,9 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
 import headerImg from "../../public/homeAssets/headerImg.jpg";
 import Button from "../../components/button";
-// import trendingButt from "../../components/trendingButt";
 import trusted1 from "../../public/homeAssets/payoneerLogo.png";
 import trusted2 from "../../public/homeAssets/googleLogo.png";
 import trusted3 from "../../public/homeAssets/adobeLogo.png";
-import wordPress from "../../public/homeAssets/wordpressDeveloper.jpg"
-import audioVideo from "../../public/homeAssets/audioVideoEditing.jpg"
-import proDesign from "../../public/homeAssets/productDesign2.jpg"
-import admin from "../../public/homeAssets/adminCustomerSupport.jpg"
 import uxIcon from "../../public/homeAssets/uxUiDesign.png"
 import accounting from "../../public/homeAssets/accounting.png";
 import editing from "../../public/homeAssets/editing.png";
@@ -21,12 +15,10 @@ import antonio from "../../public/homeAssets/antonio.jpg";
 import rashed from "../../public/homeAssets/rashed.jpg";
 import zubayer from "../../public/homeAssets/zubayer.jpg";
 import jannatul from "../../public/homeAssets/jannatul.jpg";
-import arrowUp from "../../public/homeAssets/arrowUp.png";
-import arrowDown from "../../public/homeAssets/arrowDown.png";
 import businessSolutions from "../../public/homeAssets/businessSolutions.jpg";
 import playBtn from "../../public/homeAssets/playButtonIcon.png"
 import howItWorks from "../../public/homeAssets/howItWorks.jpg";
-import quotes from "../../public/homeAssets/feedbackQuotes.png";
+import quotesImg from "../../public/homeAssets/feedbackQuotes.png";
 import client1 from "../../public/homeAssets/client1.jpg";
 import client2 from "../../public/homeAssets/client2.jpg";
 import client3 from "../../public/homeAssets/client3.jpg";
@@ -38,14 +30,12 @@ import gmail from "../../public/homeAssets/gmailLogo.png";
 import insta from "../../public/homeAssets/instaLogo.jpg";
 import messenger from "../../public/homeAssets/messengerLogo.jpg";
 import slack from "../../public/homeAssets/slackLogo.png";
+import Accordian from "../../components/Accordian";
+import FunctionClick from "../../components/FunctionClick";
+import TrendButt from "../../components/TrendButt";
 
 
 export default function Home() {
-  // JS functionality !!!SOS!!!
-    //   useEffect(() => {
-    //   scrolly();
-    // }, []);
-
   return (
     <>
       <header className="headerFlexContainer wrapper">
@@ -89,78 +79,9 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <section className="trendingServices wrapper">
-          <div className="trendy">
-            <h2>Trending Services</h2>
-            <div className="trendyButts">
-              <button
-                class="scroll-arrow"
-                id="scroll-left"
-                // onClick="scrollLeft()"
-              >
-                &#60;
-              </button>
-              <button
-                class="scroll-arrow"
-                id="scroll-right"
-                // onClick="scrollRight()"
-              >
-                &#62;
-              </button>
-            </div>
-          </div>
-          <div className="trendingContainer">
-            <div className="carousel" id="imgList">
-              <p>
-                WordPress <br></br> Development.
-              </p>
-              <Image
-                className="trendingImage"
-                src={wordPress}
-                alt="person typing on computer"
-                height={250}
-                width={300}
-              />
-            </div>
-            <div className="carousel">
-              <p>
-                Audio & <br></br> Video Editing.
-              </p>
-              <Image
-                className="trendingImage"
-                src={audioVideo}
-                alt="person looking at computer screen, wearing headphones"
-                height={250}
-                width={300}
-              />
-            </div>
-            <div className="carousel">
-              <p>
-                Product & <br></br> Branding Design.
-              </p>
-              <Image
-                className="trendingImage"
-                src={proDesign}
-                alt="person holding tablet pen and tablet with designs"
-                height={250}
-                width={300}
-              />
-            </div>
-            <div className="carousel">
-              <p>
-                Admin & <br></br> Customer Support.
-              </p>
-              <Image
-                className="trendingImage"
-                src={admin}
-                alt="four people around large desk with computers"
-                height={250}
-                width={300}
-              />
-            </div>
-          </div>
-        </section>
-
+        {/* trending services section as component */}
+        <TrendButt />
+        
         <section className="marketplace wrapper">
           <div className="marketplaceTitle">
             <h3 className="explore">Explore the marketplace.</h3>
@@ -373,38 +294,35 @@ export default function Home() {
             <div className="whyRight">
               <p className="whyThough">Why choose us?</p>
               <h2>World of talent at your fingertips</h2>
-              <div className="seamlessSearch">
-                <h4>Seamless Search</h4>
-                <Image
-                  src={arrowUp}
-                  alt="arrow up symbol"
-                  width={15}
-                  height={10}
-                />
+              <div className="accordian">
+                <div className="accordian-item">
+                  <Accordian text={"seamless search"} />
+                  <div className="accordion-item-body">
+                    <p>
+                      It only takes 5 minutes. Set-up is smooth and simple, with
+                      full customisable page design to reflect your brand.
+                    </p>
+                  </div>
+                  <Accordian text={"hire top talents"} />
+                  <div className="accordion-item-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Mollitia magnam illo aliquid ipsum at distinctio
+                      architecto fugit ratione natus, totam veniam consequatur.
+                    </p>
+                  </div>
+                  <Accordian text={"protected payments, everytime"} />
+                  <div className="accordion-item-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quam possimus officia eligendi earum error fuga modi.
+                    </p>
+                  </div>
+                </div>
+                <div className="buttonCont">
+                  <Button text={"Learn more"} />
+                </div>
               </div>
-              <p>
-                It only takes 5 minutes. Set-up is smooth an dsimple, with full
-                customisable page design to reflect your brand.
-              </p>
-              <div className="hireTopTalents">
-                <h4>Hire top talents</h4>
-                <Image
-                  src={arrowDown}
-                  alt="arrow down symbol"
-                  width={15}
-                  height={10}
-                />
-              </div>
-              <div className="protectedPayments">
-                <h4>Protected payments, everytime</h4>
-                <Image
-                  src={arrowDown}
-                  alt="arrow down symbol"
-                  width={15}
-                  height={10}
-                />
-              </div>
-              <Button text={"Learn more"} />
             </div>
           </div>
         </section>
@@ -497,62 +415,48 @@ export default function Home() {
         </section>
 
         <section className="whatClientsHaveToSay wrapper">
-          <Image src={quotes} className="quotes" />
+          <Image src={quotesImg}
+            alt="green quotation marks" className="quotes" />
           <h3>
             Check what these clients <br /> have to say.
           </h3>
-          <div className="clientInfo">
-            <div className="greenClientCirc">
-              <p>{"<"}</p>
-            </div>
-            <p>
-              "Very easy to set-up. I had no experience with <br /> hosting
-              before singing up with HostGator but they've <br /> made
-              everything seem simple."
-            </p>
-            <div className="greenClientCirc">
-              <p>{">"}</p>
-            </div>
-          </div>
-          <p className="rashed">
-            &#9866; Rashed ka. <span>Italy</span>
-          </p>
+          <FunctionClick/>
           <div className="clients">
             <Image
               className="client"
               src={client1}
               alt="profile image of client 1"
               width={90}
-              height={90}
+              height={80}
             />
             <Image
               className="client"
               src={client2}
               alt="profile image of client 2"
               width={90}
-              height={90}
+              height={80}
             />
             <Image
               className="client"
               src={client3}
               alt="profile image of client 3"
               width={90}
-              height={90}
+              height={80}
             />
-          
+
             <Image
               className="client"
               src={client4}
               alt="profile image of client 4"
               width={90}
-              height={90}
+              height={80}
             />
             <Image
               className="client client5"
               src={client5}
               alt="profile image of client 5"
               width={90}
-              height={90}
+              height={80}
             />
           </div>
         </section>

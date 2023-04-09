@@ -1,23 +1,20 @@
-import Link from "next/link";
 import Image from "next/image";
 import navLogo from "../public/homeAssets/jobiLogoBlackFont.png";
-import MyDropdown from "./MyDropdown";
-
 
 export default function Nav() {
   return (
     <>
       <nav className="navContainer wrapper">
-        <div className="navLogo">
+        <a href="/" className="navLogo">
           <Image src={navLogo} alt="jobi logo" />
-        </div>
+        </a>
         <div className="findNav">
-          <p>Find Jobs</p>
-          <p>Find Talents</p>
-          <p className="explore">Explore</p>
-            <div className="exploreArrow">
-              <MyDropdown />
-            </div>
+          <a href="/jobs">Find Jobs</a>
+          <a href="/plans">Find Talents</a>
+          <a href="/" className="explore">
+            Explore
+          </a>
+          <div className="exploreArrow"></div>
         </div>
         <div className="navLogin">
           <button className="navButt1">Login</button>

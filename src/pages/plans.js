@@ -2,8 +2,8 @@ export default function Plan() {
   return (
     <>
       <main>
-        <div>
-          <p>Plan page</p>
+        <div className="planDiv">
+          <h2>Plan page coming soon!</h2>
         </div>
       </main>
     </>
